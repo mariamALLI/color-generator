@@ -1,0 +1,169 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Simonetta';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Simonetta'), url('https://fonts.cdnfonts.com/s/29888/Simonetta-Italic.woff') format('woff');
+}
+
+body {
+    background-color: #BBD0FF;
+    padding: 0;
+    margin: 0;
+    font-family: 'Simonetta';
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+}
+
+#color_form {
+    display: grid;
+    grid-template-columns: 18% 50% 35%;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin-left: -28px;
+    }
+
+#color_form input {
+    border: none;
+    background-color: #BBD0FF;
+    width: 4rem;
+    height: 2.5rem;
+}    
+
+.mode_options {
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #BBD0FF;
+    background: #000;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1em;
+}  
+
+button {
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#color_btn {
+    color: #BBD0FF;
+    background-color: #000;
+}
+
+main {
+    display: flex;
+}
+
+.copy-box {
+    width: 36vw;
+    padding: 1rem;
+}
+
+.color_box,
+.color_box_txt {
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+} 
+
+.color-box {
+    border: 3px solid #fff;
+    padding: 2rem 7.5rem;
+    width: 80%;
+}
+
+.color-btn {
+    padding: 0.3rem 1.5rem;
+    margin-bottom: -1rem;
+    margin-top: -1rem;
+    background-color: inherit;
+    font-size: 1em;
+    color: #000;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+.color-txt {
+    text-align: center;
+    cursor: pointer;
+    margin-top: -0.7rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.color-txt,
+header h1 {
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+}
+
+
+
+@media (min-width: 800px){
+    #color_display_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 0px;
+        padding: 1rem 2rem;
+        }
+
+        .color_box,
+        .color_box_txt {
+            flex-direction: column;
+        }
+
+        .color-box {
+            padding: 1rem 4rem;
+            height: 100vh;
+            border-top: 29px solid #fff;
+            width: auto;
+        }
+
+        #color_form input {
+            width: 6rem;
+            height: 3.5rem;
+        }
+
+        #color-txt_one {
+            border: 1px solid #fff;
+        }
+        
+        main {
+            display: block;
+        }
+
+        #color_display_txt_container {
+            display: flex;
+            align-items: center;
+             justify-content: center;
+        }
+
+        .copy-box {
+            padding: 1rem 0rem;
+            width: 16vw;
+            margin-bottom: -0.7rem;
+        }
+
+        .color-btn {
+            display: block;
+             margin: 0 auto;
+        }
+}
