@@ -135,6 +135,7 @@ header h1 {
             height: 100vh;
             border-top: 29px solid #fff;
             width: auto;
+            height: 60vh;
         }
 
         #color_form input {
