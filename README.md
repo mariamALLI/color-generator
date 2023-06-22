@@ -5,4 +5,4 @@
 - live site url: [Netlify](https://cheerful-pudding-5ed90b.netlify.app/)
 
 # ScreenShot
-![Screen Shot](./../images/Screenshot.png)
+![Screen Shot](images/Screenshot.png)
